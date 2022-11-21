@@ -1,0 +1,101 @@
+.main-div {
+  background-color: darkolivegreen;
+  height: 800px;
+  margin: 0 auto;
+  width: 1000px;
+  font-size: 30px;
+  color: #fff;
+  border: 10px solid #999;
+  position: relative;
+}
+
+.main-div div {
+  height: 150px;
+  width: 200px;
+  border: 2px solid #333;
+}
+
+/* .div-1 {
+  background-color: aquamarine;
+  position: absolute;
+  right: 0;
+}
+
+.div-2 {
+  background-color: bisque;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.div-3 {
+  background-color: coral;
+  position: absolute;
+  bottom: 0;
+}
+.div-4 {
+  background-color: darkcyan;
+} */
+.main-div div {
+  position: absolute;
+}
+.div-1 {
+  background-color: aquamarine;
+  top: 20px;
+  left: 20px;
+  z-index: 6;
+}
+
+.div-2 {
+  background-color: bisque;
+  top: 40px;
+  left: 40px;
+  z-index: 5;
+}
+.div-3 {
+  background-color: coral;
+  top: 60px;
+  left: 60px;
+  z-index: 4;
+}
+.div-4 {
+  background-color: darkcyan;
+  top: 80px;
+  left: 80px;
+  z-index: 3;
+}
+
+.main-two {
+  padding: 150px;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.main-two h1 {
+  text-align: center;
+  position: relative;
+}
+.main-two::before {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+.main-two h1::after {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 5px;
+  background-color: yellow;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
